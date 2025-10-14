@@ -1,5 +1,3 @@
-import 'package:flutter/foundation.dart';
-
 class StoryModel {
   final String id;
   final String username;
@@ -71,4 +69,4 @@ class StoryModel {
       isViewed: isViewed ?? this.isViewed,
     );
   }
-}
+} 
