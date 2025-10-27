@@ -21,7 +21,7 @@ class _MaincustomPageState extends State<MaincustomPage> {
     FriendsPage(),
     ReelsPage(),
     MarketplacePage(),
-    NotificationsPage(),
+    NotificationPage(),
     MenuPage(),
   ];
 
