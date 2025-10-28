@@ -1,5 +1,6 @@
 import 'package:facebook/model/story_model.dart';
 import 'package:facebook/widgets/createpost.dart';
+import 'package:facebook/widgets/newsfeed_post.dart';
 import 'package:facebook/widgets/storieslist.dart';
 import 'package:flutter/material.dart';
 
@@ -72,14 +73,21 @@ List<StoryModel> stories = [
           DrawerButton(),
         ],
       ),
-      body: Column(
-        children: [
-        const Createpost(),
-        StoriesList(
-          stories: stories,
-          onStoryTap: (story) {},
-        )
-      ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+          const Createpost(),
+          
+          StoriesList( 
+            stories: stories,
+            onStoryTap: (story) {},
+          ),
+          NewsFeedPost(),
+          NewsFeedPost(
+            name: "Juan",
+          )
+        ],
+        ),
       ),
     );
   }
