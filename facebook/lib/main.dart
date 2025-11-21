@@ -1,3 +1,4 @@
+import 'package:facebook/pages/friends.dart';
 import 'package:facebook/pages/newsfeed.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ void main() {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
       ),
-      home: Newsfeed(),
+      home: FriendsPage(),
       debugShowCheckedModeBanner: false,
     );
   }
